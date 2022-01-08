@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Lexend Deca', 'Inter'  sans-serif;
+}
+
+body {
+  background-color:#f9f9f9;
+}
+
+div .logo {
+  width: 70px ;
+  height: 30px;
+}
+.container {
+  width: 62vw;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 0.2em;
+  height: 60px;
+  background-image: linear-gradient(to right, #75DDDD, #09BC8A);
+  box-shadow: 10px 9px 49px -17px rgba(0.4, 255, 255, 0.3);
+}
+
+header .logo {
+  font-family: PT Sans;
+  font-style: normal;
+  font-size: 1.2em;
+  color: #fff;
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 650px) {
+  .menu-content {
+    max-width: 300px;
+    width: 100%;
+    margin-left: 1em;
+    display: inline-block;
+  }
+
+  .list-menu {
+    display: flex!important;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .item-menu {
+    flex: auto;
+  }
+
+  .item-menu .link-menu {
+    padding: 0px;
+    color: #fff;
+    display: inline-block;
+    transition: .4s;
+    cursor: pointer;
+    text-align: center
+  }
+
+  .item-menu .link-menu:hover {
+    color: #555;
+  }
+  
+  .navegacao-mobile {
+    display: none!important;
+  }
+ }
+
+.navegacao-mobile {
+  background: #fff;
+  padding: 10px;
+  display: block;
+  width: 53px;
+  cursor: pointer;
+  display:inline-block;
+}
+.linha-menu {
+  width: 25px;
+  height: 3px;
+  border-radius: 10px;
+  background: #09BC8A;
+  margin: 4px;
+  display: block;
+}
+.input-menu-all {
+  display: none!important;
+}
+.list-menu {
+  display: none;
+   width: 100%;
+}
+.item-menu {
+    flex: auto;
+  }
+  .item-menu .link-menu {
+    font-family: PT Sans;
+    padding: 15px;
+    color: #fff;
+    display: inline-block;
+    transition: .4s;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+.input-menu-all:checked ~ .list-menu {
+       display: inline-block;
+      
+}
+.input-menu-all:checked ~ .list-menu .link-menu  {
+  text-align: left;
+}
+
+footer{
+  font-family: PT Sans;
+  font-size: 1.0em;
+  color: #fff;
+  height: 60px;
+  background-color: #555;
+}
+
+.copyright {
+  padding-top: 20px;
+  text-align: left;
+}
+
